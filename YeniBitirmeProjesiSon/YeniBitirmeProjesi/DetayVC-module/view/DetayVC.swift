@@ -55,8 +55,9 @@ class DetayVC: UIViewController {
     
     
     @IBAction func StepperDegisimKontrol(_ sender: UIStepper) {
-        labelStepper.text = String(sender.value)
-        labelStepper.text = String(Int(sender.value)) 
+        labelStepper.text = String(sender.value) 
+        labelStepper.text = String(Int(sender.value))
+        labelYemekFiyat.text = String(Int((yemek?.yemek_fiyat)!)! * Int (sender.value)) + " ₺"
       //  labelYemekFiyat.text = "\(Int(yemek.yemek_fiyat!)! * Int(labelStepper!.text))
      //   labelYemekFiyat.text = "\(Int(yemek.yemek_siparis_adet!)! * Int(yemek?!.yemek_fiyat!)!)" + " ₺"
     

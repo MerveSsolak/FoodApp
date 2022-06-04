@@ -59,7 +59,7 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource {
         hucre.labelYemekAd.text = yemek.yemek_adi
     
         hucre.labelFiyat.text = "\(Int(yemek.yemek_siparis_adet!)! * Int(yemek.yemek_fiyat!)!)" + " ₺"
-        hucre.labelYemekAdet.text = "\(yemek.yemek_siparis_adet!)" 
+        hucre.labelYemekAdet.text = "\(yemek.yemek_siparis_adet!)" + " Adet"
         
         
         let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/" + (yemeklerListe[indexPath.row].yemek_resim_adi!))
